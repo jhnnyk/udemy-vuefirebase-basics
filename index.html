@@ -20,10 +20,11 @@
     <h1>Vue Basics</h1>
     <div id="app">
       <h2>{{ title }}</h2>
-      <p>{{ greet('evening') }}</p>
-      <a :href="url">YouTube</a>
-      <div :class="classes">Classes from Instance</div>
-      <input type="text" :value="name" />
+      <p>I earn {{ wage }} dollars per hour.</p>
+      <button v-on:click="changeWage(1)">Increase wage buy $1</button>
+      <button v-on:click="changeWage(-1)">Decrease wage buy $1</button>
+      <button v-on:dblclick="changeWage(5)">Increase wage buy $5</button>
+      <button v-on:dblclick="changeWage(-5)">Decrease wage buy $5</button>
     </div>
     <script src="app.js"></script>
   </body>

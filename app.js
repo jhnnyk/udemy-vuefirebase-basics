@@ -4,5 +4,9 @@ new Vue({
     title: 'Becoming a Vue ninja',
     name: 'John'
   },
-  methods: {}
+  methods: {
+    logMessage() {
+      console.log('Hello world');
+    }
+  }
 });
